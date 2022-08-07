@@ -1,27 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mario Vásquez Portfolio</title>
-    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/index.css" />
 </head>
-<body>
-    <header>
-        <nav>
-            <div>
-                <a href="#iHero">
-                    <img src="./img/logo.webp" alt="Logo MV" width="34" height="36"/>
+<body class="body">
+    <header class="header">
+        <nav class="header-nav">
+            <div class="header-nav__container">
+                <a href="#iHero" class="header-nav__link-logo-container">
+                    <img src="./img/logo.webp" alt="Logo MV" width="34" height="36" class="header-nav__link-logo"/>
                 </a>
-                <ul>
-                    <li><a href="#iAboutMe">About Me</a></li>
-                    <li><a href="#iExperience">Experience</a></li>
-                    <li><a href="#iContact">Contact</a></li>
-                    <li><a href="https://www.linkedin.com/in/mario-leonardo-v%C3%A1squez-flori%C3%A1n/" target="_blank">LinkedIn</a></li>
+                <ul class="header-nav__menu-list-container">
+                    <li><a href="#iAboutMe" class="header-nav__menu-link">About Me</a></li>
+                    <li><a href="#iExperience" class="header-nav__menu-link">Experience</a></li>
+                    <li><a href="#iContact" class="header-nav__menu-link">Contact</a></li>
+                    <li><a href="https://www.linkedin.com/in/mario-leonardo-v%C3%A1squez-flori%C3%A1n/" target="_blank" class="header-nav__menu-link">LinkedIn</a></li>
                 </ul>
             </div>
         </nav>
     </header>
+    <main>
+        <article class="i-hero">
+            <div class="i-hero__container">
+                <div class="i-hero__info-container">
+                    <div class="i-hero__info">
+                        <h2>Hello, I am</h2>
+                        <h1>Mario Vásquez</h1>
+                        <h2>I'm a developer with a passion for learning new technologies.</h2>
+                        <figure class="i-hero__img-tech-container">
+                            
+                        </figure>
+                    </div>
+                </div>
+                <div class="i-hero__img-container">
+
+                </div>
+            </div>
+        </article>
+    </main>
 </body>
 </html>
