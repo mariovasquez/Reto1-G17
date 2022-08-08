@@ -303,6 +303,8 @@
     flex-direction: row;
     list-style-type: none;
     gap: 3rem;
+    justify-content: space-between;
+    padding: 0;
 }
 
 .footer-nav__copyright{
