@@ -95,7 +95,7 @@
     padding: 0 1rem;
     z-index: 5;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 0.5rem;
     align-items: center;
 }
@@ -104,14 +104,10 @@
     display: flex;
     flex-direction: column;
     max-width: 250px;
+    align-items: center;
+    gap: 1rem;
 }
 
-.i-hero__info {
-    display: flex;
-    gap: 1rem;
-    flex-direction: column;
-    align-items: center;
-}
 .i-hero__img-tech-container{
     display: flex;
     gap: 1rem;
@@ -155,7 +151,8 @@
 }
 .i-about__container{
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    flex-direction: column;
     gap: 0.5rem;
     padding: 8rem 0 0 0;
     max-width: 450px;
@@ -188,8 +185,8 @@
 }
 .i-about__img{
     border-radius: 25%;
-    max-width: 190px;
-    max-height: 200px;
+    max-width: 290px;
+    max-height: 300px;
 }
 
 .i-experience{
@@ -215,7 +212,7 @@
     border: 3px solid #fff;
     justify-content: center;
     align-items: center;
-    max-width: 25rem;
+    max-width: 375px;
 }
 
 .i-experience__info-table-header{
@@ -251,7 +248,7 @@
     flex-direction: column;
     gap: 1rem;
     border-radius: 5%;
-    width: 325px;
+    max-width: 300px;
     align-items: center;
 }
 
@@ -319,6 +316,7 @@
         width: 1024px;
     }
     .i-hero__container {
+        flex-direction: row;
         gap: 3rem;
     }
     .i-hero__info-container{
@@ -346,6 +344,7 @@
     .i-about__container{
         gap: 2rem;
         max-width: 1920px;
+        flex-direction: row;
     }
     .i-about__info-h2,
     .i-experience__info-h2,
@@ -365,6 +364,7 @@
         max-width: 1180px;
     }
     .i-contact__form{
-        width: 500px;
+        max-width: 500px;
+        width: 450px;
     }
   }
