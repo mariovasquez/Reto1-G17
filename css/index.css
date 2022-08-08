@@ -3,7 +3,8 @@
 }
 .body{
     font-family: DraftB-Regular;
-    background-color: #161618;
+    animation: fadeBackground 3s;
+    animation-fill-mode: forwards;
     color: #fff;
     margin: 0;
 }
@@ -99,6 +100,7 @@
     flex-direction: column;
     gap: 0.5rem;
     align-items: center;
+    animation: fadeIn 1s ease-out 1 forwards;
 }
 
 .i-hero__info-container{
@@ -311,6 +313,11 @@
     text-decoration: none;
     color: yellow;
 }
+
+@keyframes fadeBackground {
+    from { background-color: #083179; }
+    to { background-color: #161618; }
+  }
 
 @media (min-width: 768px) {
     .header-nav__container {
