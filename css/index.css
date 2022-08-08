@@ -155,7 +155,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 3rem;
+    gap: 1rem;
     max-width: 450px;
     padding: 1rem 1rem;
     border: 5px solid #fff;
@@ -188,11 +188,12 @@
 .i-about__img-container{
     display: flex;
     align-items: center;
+    padding: 1rem 0;
 }
 .i-about__img{
     border-radius: 25%;
-    max-width: 290px;
-    max-height: 300px;
+    max-width: 190px;
+    max-height: 200px;
 }
 
 .i-experience{
