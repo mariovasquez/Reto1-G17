@@ -29,7 +29,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 0;
-    width: 400px;
+    max-width: 400px;
+    gap: 0.5rem;
 }
 
 .header-nav__link-logo-container{
@@ -313,6 +314,7 @@
 
 @media (min-width: 768px) {
     .header-nav__container {
+        max-width: 1024px;
         width: 1024px;
     }
     .header-nav__menu-list-container{
