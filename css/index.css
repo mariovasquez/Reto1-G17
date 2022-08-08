@@ -56,13 +56,27 @@
     color: #fff;
     text-decoration: none;
     font-weight: 700;
-    transition: color 0.5s ease-in-out;
+    transition: color 0.5s;
 }
 
-.header-nav__menu-link:hover,
-.header-nav__menu-link--active{
+.header-nav__menu-link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -0.125rem;
+    width: 0;
+    height: 0.125rem;
+    background-color: 7921d1;
+    transition: width 0.5s ease-in-out;
+}
+.header-nav__menu-link:hover{
     color: #c7ffda;
+}
+
+.header-nav__menu-link:hover::before,
+.header-nav__menu-link--active{
     border-bottom: 3px solid #7921d1;
+    width: 100%;
 }
 
 .i-hero {
@@ -71,36 +85,16 @@
     align-items: center;
     height: 100vh;
     justify-content: center;
-}
-.i-hero::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100px;
-    height: 100px;
-}
-
-.i-hero::after{
-    content: '';
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 28em;
+    padding: 2rem;
 }
 
 .i-hero__container {
-    padding: 0 1rem;
+    padding: 1.5rem 1.5rem;
     z-index: 5;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     align-items: center;
-    animation: fadeIn 1s ease-out 1 forwards;
 }
 
 .i-hero__info-container{
@@ -114,6 +108,8 @@
 .i-hero__img-tech-container{
     display: flex;
     gap: 1rem;
+    padding: 1rem 1rem;
+    border: 5px solid #000;
 }
 
 .i-hero__info-paragraph{
@@ -121,6 +117,7 @@
     margin: 0;
     color: #94A1B2;
     line-height: 1.5rem;
+    text-align: justify;
 }
 
 .i-about__info-h3{
@@ -130,6 +127,7 @@
 .i-hero__info-h1{
     font-size: 30px;
     margin: 0;
+    text-align: center;
 }
 
 .i-hero__img-container{
@@ -144,21 +142,23 @@
 }
 
 .i-about{
-    padding: 0 1rem;
+    padding: 0 2rem;
     z-index: 5;
     display: flex;
     flex-direction: row;
     gap: 2.5rem;
     align-items: center;
     justify-content: center;
+    height: 150vh;
 }
 .i-about__container{
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 0.5rem;
-    padding: 8rem 0 0 0;
+    gap: 3rem;
     max-width: 450px;
+    padding: 1rem 1rem;
+    border: 5px solid #fff;
 }
 .i-about__info{
     max-width: 300px;
@@ -166,6 +166,8 @@
     flex-direction: column;
     margin: 0px;
     gap: 0.5rem;
+    padding: 1rem 1rem;
+    
 }
 
 .i-about__info-h2,
@@ -180,6 +182,7 @@
     font-size: 20px;
     margin: 0px;
     color: #94A1B2;
+    text-align: justify;
 }
 
 .i-about__img-container{
@@ -199,12 +202,13 @@
     align-items: center;
     justify-content: center;
     padding: 0 1rem;
+    height: 100vh;
 }
 
 .i-experience__container{
     display: flex;
     flex-direction: column;
-    padding: 8rem 0 0 0;
+    /*padding: 8rem 0 0 0;*/
     gap: 5rem;
     align-items: center;
 }
@@ -240,12 +244,12 @@
     align-items: center;
     justify-content: center;
     padding: 0 1rem;
+    height: 105vh;
 }
 
 .i-contact__container{
     display: flex;
     flex-direction: column;
-    padding: 8rem 0 0 0;
     gap: 5rem;
 }
 .i-contact__form{
@@ -293,7 +297,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 8rem 0 0 0;
+    padding: 4rem 0 0 0;
 }
 
 .footer-nav__container{
@@ -335,6 +339,7 @@
         gap: 1rem;
     }
     .i-hero__container {
+        padding: 3rem 3rem;
         flex-direction: row;
         gap: 3rem;
     }
@@ -356,6 +361,10 @@
         max-width: 400px;
         max-height: 400px;
     }
+    .i-about{
+        padding: 2rem;
+        height: 100vh;
+    }
     .i-about__info{
         max-width: 720px;
         gap: 0.5rem;
@@ -364,6 +373,7 @@
         gap: 2rem;
         max-width: 1920px;
         flex-direction: row;
+        padding: 1rem 2rem;
     }
     .i-about__info-h2,
     .i-experience__info-h2,
@@ -374,8 +384,8 @@
         font-size: 25px;
     }
     .i-about__img{
-        max-width: 390px;
-        max-height: 400px;
+        max-width: 310px;
+        max-height: 330px;
     }
     .i-experience__info-table{
         padding: 1rem;
