@@ -3,8 +3,8 @@
 }
 .body{
     font-family: DraftB-Regular;
-    animation: fadeBackground 3s;
-    animation-fill-mode: forwards;
+    animation: fadeBackground 3s infinite;
+    animation-fill-mode:both;
     color: #fff;
     margin: 0;
 }
@@ -315,9 +315,10 @@
 }
 
 @keyframes fadeBackground {
-    from { background-color: #083179; }
-    to { background-color: #161618; }
-  }
+    0%   { background: #1e1e3a; }
+    50%  { background: #161618; }
+    100%  { background: #1e1e3a; }
+}
 
 @media (min-width: 768px) {
     .header-nav__container {
