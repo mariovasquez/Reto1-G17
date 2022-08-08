@@ -43,7 +43,7 @@
 
 .header-nav__menu-list-container{
     display: flex;
-    gap: 1rem;
+    gap: 0.5rem;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -314,6 +314,9 @@
 @media (min-width: 768px) {
     .header-nav__container {
         width: 1024px;
+    }
+    .header-nav__menu-list-container{
+        gap: 1rem;
     }
     .i-hero__container {
         flex-direction: row;
